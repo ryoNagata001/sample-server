@@ -245,8 +245,7 @@ You should see a _Hello, Borris!_.
 
 ## Summary
 
-This is clearly an naive application.
-But it gives a good basis for creating future Express applications with Typescript.
+This application, though simple, gives a good basis for creating future Express applications with Typescript.
 
 You have learned how to intialise a Typescript application from the command line.
 You have also seen how to make use of Typings within a Typescript application.
