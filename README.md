@@ -59,7 +59,7 @@ Looking inside the newly generated `tsconfig.json` you should see the following.
 
 For the purposes of this demo we are going to put the compiled `.js` files into a `build` directory.
 In order to tell the Typescript compiler that this is where the compiled files should go we must add an `outDir` parameter.
-Add the following to the `compiledOptions` object inside the `tsconfig.json` file.
+Add the following to the `compilerOptions` object inside the `tsconfig.json` file.
 
 ```
 "outDir": "build"
