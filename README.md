@@ -6,7 +6,7 @@ In this article we will set up an [Express][1] application using [Typescript][2]
 
 In order to follow this tutorial you will need the latest version of [Node js][3] installed.
 I recommend installing node js via [Homebrew][5] if you are on OSX.
-Once node is installed, we can initialise or project via [NPM][6].
+Once node is installed, we can initialise our project using [NPM][6].
 
 Optionally you should install [Visual Studio Code][7].
 This is a code editor from Microsoft that is built using Typescript.
@@ -16,7 +16,7 @@ It provides an excellent environment for working with Typescript and many other 
 
 Now that the prerequisites are installed we can begin setting up the Typescript project.
 Open up a terminal, create, and cd into a directory called _express-ts_.
-In this directory we will initialize or `npm` project.
+In this directory we will initialize our `npm` project.
 
 Use the following commands to do so:
 
@@ -36,9 +36,9 @@ Run the following command to do so:
 npm install --save typescript
 ```
 
-Now that Typescript is installed as a dependency we can initialise or Typescript project via `npm` using the following command.
+Now that Typescript is installed as a dependency we can initialise our Typescript project via `npm`.
 
-Firstly we must tell `npm` to use the project's version of `tsc` the Typescript compiler.
+Firstly we must tell `npm` to use the project's version of `tsc`, the Typescript compiler.
 To do this update the generated `package.json` file to the following, which aliases `tsc` to the project's version of `tsc`.
 
 ```json
@@ -52,7 +52,7 @@ To do this update the generated `package.json` file to the following, which alia
 }
 ```
 
-This allows us to run the following command, which will generate a default `tsconfig.json` file.
+By adding `"tsc": "tsc"` inside _scripts_ we can run the following command, which will generate a default `tsconfig.json` file.
 
 ```
 npm run tsc -- --init
@@ -75,7 +75,7 @@ Looking inside the newly generated `tsconfig.json` you should see the following.
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
-    "outDir": "./build",                        /* Redirect output structure to the directory. */
+    // "outDir": "./",                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
@@ -130,7 +130,7 @@ Uncomment the `outDir` parameter and give it the value `"./build"`, it should lo
 "outDir": "./build",
 ```
 
-Now that the `tsconfig` is correctly set up we will add some Typescript Definition files or `.d.ts` files via the `@Types` module.
+Now that the `tsconfig` is correctly set up we will add some Typescript Definition files or `.d.ts` files via the `@types` module.
 These files are used to give the compiler knowledge of the application.
 
 As we will be using Express and ES2015 syntax. We need to install the `es6-shim`, and `express` typings.
@@ -229,7 +229,7 @@ Add the following to that file.
 
 ```typescript
 /* app/controllers/index.ts */
-export * from './welcomeController';
+export * from './welcome.controller';
 ```
 
 
