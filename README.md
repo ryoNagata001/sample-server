@@ -62,7 +62,7 @@ Running the above command creates the `tsconfig.json` in the current directory.
 It also adds some useful boilerplate code to the file.
 Looking inside the newly generated `tsconfig.json` you should see the following.
 
-```json
+```javascript
 {
   "compilerOptions": {
     /* Basic Options */
