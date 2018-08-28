@@ -242,7 +242,7 @@ Now that the `WelcomeController` is being correctly exported lets make use of it
 /* app/server.ts */
 
 // Import everything from express and assign it to the express variable
-import * as express from 'express';
+import express from 'express';
 
 // Import WelcomeController from controllers entry point
 import {WelcomeController} from './controllers';
