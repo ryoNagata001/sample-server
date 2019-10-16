@@ -9,6 +9,10 @@ router.get('/', (req: Request, res: Response) => {
 router.get('/:name', (req: Request, res: Response) => {
     let { name } = req.params;
 
+    /**
+     * データベースに保存
+     */
+
     res.send(`Hello, ${name}!`);
 });
 
